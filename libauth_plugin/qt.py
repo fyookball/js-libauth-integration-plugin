@@ -16,17 +16,13 @@ import queue
 import itertools
 import time
 
-
 HERE = os.path.dirname(__file__)
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
- 
-
 def _is_running_from_zip() -> bool:
     zmark = ".zip" + os.sep
     return zmark in __file__
-
 
 def _zip_info():
     """
@@ -383,10 +379,7 @@ class Plugin(BasePlugin):
  
     def test_libauth(self):
         """
-        Smoke tests for the libauth JSON-RPC bridge, including a
-        transaction encode/decode round-trip.
-
-        Keeps all bridge-specific experimentation out of load_wallet.
+        Smoke tests for the libauth JSON-RPC bridge.
         """
         try: 
 
@@ -479,7 +472,6 @@ class Plugin(BasePlugin):
             # ---- TEST 7) transaction encode/decode round-trip ----
         
             zero32 = "00" * 32
-
             tx_obj = {
                 "version": 2,
                 "locktime": 0,
