@@ -20,7 +20,7 @@ even if they are in different threads.
 For the secondary function, see "JS" section below.
 
 Other than the embedded binaries, the plugin is lightweight.  There are intentionally no wrapper functions.
-Intead, you can call any Libauth function, but the developer is responsible for understanding
+Instead, you can call any Libauth function, but the developer is responsible for understanding
 each call's input and output types. 
 
 Be aware of particuarly heavy calls to Libauth, because they could hang Electron Cash's GUI
