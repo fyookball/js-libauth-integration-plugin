@@ -55,6 +55,8 @@ is intentionally blank.
 The plugin will run several test calls to Libauth and one custom JS call to a "hello" script
 and print the output to the console.
 
+![image](https://github.com/fyookball/js-libauth-integration-plugin/blob/main/libauth-plugin.png)
+
 
 # How to Develop and Rebuild the Plugin
 
