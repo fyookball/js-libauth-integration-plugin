@@ -13,7 +13,7 @@ Use with your own discretion and due dilligence.
 The plugin has two functions.  First, it provides a persistent Node.js instance
 with libauth, and secondarily: a "one-off" js runner.
 
-For the main Libauth functionality, the plugin starts a Node.js subprocess which runs `scripts/libauth_service.bundle.mj`s.  You can then
+For the main Libauth functionality, the plugin starts a Node.js subprocess which runs `scripts/libauth_service.bundle.mjs`.  You can then
 make as many calls as you want to various libauth functions.  Theoretically, any calls will work,
 even if they are in different threads.
 
